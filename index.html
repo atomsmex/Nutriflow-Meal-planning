@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NutriFlow - Smart Meal Planning</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      NutriFlow
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+
+      <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+
+          <a href="#meal-plans">
+            Meal Plans
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Weight Loss</a></li>
+            <li><a href="#">Muscle Gain</a></li>
+            <li><a href="#">Quick Meals</a></li>
+            <li><a href="#">Student Budget</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#health">Nutrition</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-text reveal">
+
+      <h1>
+        Healthy Meal Planning
+        Made Simple
+      </h1>
+
+      <p>
+        Organize meals, discover balanced recipes,
+        and build healthier eating routines with
+        realistic nutrition guidance.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#recipes" class="primary-btn">
+          Explore Recipes
+        </a>
+
+        <a href="#health" class="secondary-btn">
+          Nutrition Insights
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1400&auto=format&fit=crop"
+        alt="Healthy Meal"
+      />
+    </div>
+
+  </section>
+
+  <!-- FEATURED MEALS -->
+
+  <section class="recipes-section" id="recipes">
+
+    <div class="recipe-grid">
+
+        <div class="filter-buttons">
+
+  <button class="filter-btn active" data-filter="all">
+    All
+  </button>
+
+  <button class="filter-btn" data-filter="protein">
+    High Protein
+  </button>
+
+  <button class="filter-btn" data-filter="vegetarian">
+    Vegetarian
+  </button>
+
+  <button class="filter-btn" data-filter="quick">
+    Quick Meals
+  </button>
+
+  <button class="filter-btn" data-filter="african">
+    African Dishes
+  </button>
+
+</div>
+
+    </div>
+
+    <div class="section-header">
+
+      <h2>Featured Meal Plans</h2>
+
+      <p>
+        Balanced meal options designed for
+        different lifestyles and nutrition goals.
+      </p>
+
+    </div>
+
+    <div class="recipe-grid">
+
+      <!-- CARD -->
+
+      <div class="recipe-card protein reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop"
+          alt="Chicken Bowl"
+        />
+
+        <div class="recipe-content">
+
+          <h3>Grilled Chicken Bowl</h3>
+
+          <p>
+            High-protein meal with vegetables and brown rice.
+          </p>
+
+          <div class="meal-info">
+            <span>520 kcal</span>
+            <span>20 mins</span>
+          </div>
+
+          <button
+            class="watch-btn"
+            data-video="https://www.youtube.com/embed/0WsLBB3AFsQ"
+          >
+            Watch Recipe
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+
+      <div class="recipe-card vegetarian reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop"
+          alt="Salad"
+        />
+
+        <div class="recipe-content">
+
+          <h3>Fresh Vegan Salad</h3>
+
+          <p>
+            A nutrient-rich mix of greens, avocado, and healthy fats.
+          </p>
+
+          <div class="meal-info">
+            <span>350 kcal</span>
+            <span>15 mins</span>
+          </div>
+
+          <button
+            class="watch-btn"
+            data-video="https://www.youtube.com/embed/w4J03M3T4WQ"
+          >
+            Watch Recipe
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+
+      <div class="recipe-card quick reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop"
+          alt="Pasta"
+        />
+
+        <div class="recipe-content">
+
+          <h3>Healthy Pasta Prep</h3>
+
+          <p>
+            Quick pasta meal prep suitable for busy schedules.
+          </p>
+
+          <div class="meal-info">
+            <span>470 kcal</span>
+            <span>25 mins</span>
+          </div>
+
+          <button
+            class="watch-btn"
+            data-video="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+            Watch Recipe
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD-->
+
+      <div class="recipe-card african reveal">
+
+  <img
+    src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop"
+    alt="Jollof Rice"
+  />
+
+  <div class="recipe-content">
+
+    <h3>Nigerian Jollof Rice</h3>
+
+    <p>
+      A flavorful West African rice dish prepared with tomatoes and spices.
+    </p>
+
+    <div class="meal-info">
+      <span>650 kcal</span>
+      <span>40 mins</span>
+    </div>
+
+    <button
+      class="watch-btn"
+      data-video="https://www.youtube.com/embed/4Y8kdP5Kf3M"
+    >
+      Watch Recipe
+    </button>
+
+  </div>
+
+</div>
+
+        <!--CARD-->
+            <div class="recipe-card protein quick reveal">
+
+  <img
+    src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1200&auto=format&fit=crop"
+    alt="Smoothie"
+  />
+
+  <div class="recipe-content">
+
+    <h3>Protein Smoothie</h3>
+
+    <p>
+      A quick recovery smoothie packed with protein and fruits.
+    </p>
+
+    <div class="meal-info">
+      <span>320 kcal</span>
+      <span>10 mins</span>
+    </div>
+
+    <button
+      class="watch-btn"
+      data-video="https://www.youtube.com/embed/eozdVDA78K0"
+    >
+      Watch Recipe
+    </button>
+
+  </div>
+
+</div>
+
+        <!--CARD-->
+
+            <div class="recipe-card vegetarian quick reveal">
+
+  <img
+    src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=1200&auto=format&fit=crop"
+    alt="Avocado Toast"
+  />
+
+  <div class="recipe-content">
+
+    <h3>Avocado Toast</h3>
+
+    <p>
+      Healthy breakfast toast with avocado, eggs, and herbs.
+    </p>
+
+    <div class="meal-info">
+      <span>290 kcal</span>
+      <span>8 mins</span>
+    </div>
+
+    <button
+      class="watch-btn"
+      data-video="https://www.youtube.com/embed/0hITdjHCFvo"
+    >
+      Watch Recipe
+    </button>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </section>
+
+  <!--WEEKLY PLANNER -->
+    <section class="planner-section reveal" id="meal-plans">
+
+  <div class="section-header">
+
+    <h2>Weekly Meal Planner</h2>
+
+    <p>
+      Organize your meals throughout the week with balanced nutrition
+      and realistic meal preparation routines.
+    </p>
+
+  </div>
+
+  <div class="planner-grid">
+
+    <!-- MONDAY -->
+
+    <div class="planner-card">
+
+      <div class="planner-day">
+        Monday
+      </div>
+
+      <div class="planner-meals">
+
+        <p>
+          <strong>Breakfast:</strong>
+          Oatmeal Bowl
+        </p>
+
+        <p>
+          <strong>Lunch:</strong>
+          Grilled Chicken Bowl
+        </p>
+
+        <p>
+          <strong>Dinner:</strong>
+          Fresh Vegan Salad
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- TUESDAY -->
+
+    <div class="planner-card">
+
+      <div class="planner-day">
+        Tuesday
+      </div>
+
+      <div class="planner-meals">
+
+        <p>
+          <strong>Breakfast:</strong>
+          Avocado Toast
+        </p>
+
+        <p>
+          <strong>Lunch:</strong>
+          Jollof Rice
+        </p>
+
+        <p>
+          <strong>Dinner:</strong>
+          Healthy Pasta Prep
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- WEDNESDAY -->
+
+    <div class="planner-card">
+
+      <div class="planner-day">
+        Wednesday
+      </div>
+
+      <div class="planner-meals">
+
+        <p>
+          <strong>Breakfast:</strong>
+          Fruit Smoothie
+        </p>
+
+        <p>
+          <strong>Lunch:</strong>
+          Rice & Fish
+        </p>
+
+        <p>
+          <strong>Dinner:</strong>
+          Veggie Bowl
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- THURSDAY -->
+
+    <div class="planner-card">
+
+      <div class="planner-day">
+        Thursday
+      </div>
+
+      <div class="planner-meals">
+
+        <p>
+          <strong>Breakfast:</strong>
+          Yogurt & Fruits
+        </p>
+
+        <p>
+          <strong>Lunch:</strong>
+          Chicken Wrap
+        </p>
+
+        <p>
+          <strong>Dinner:</strong>
+          Grilled Salmon
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- FRIDAY -->
+
+    <div class="planner-card">
+
+      <div class="planner-day">
+        Friday
+      </div>
+
+      <div class="planner-meals">
+
+        <p>
+          <strong>Breakfast:</strong>
+          Banana Pancakes
+        </p>
+
+        <p>
+          <strong>Lunch:</strong>
+          Protein Bowl
+        </p>
+
+        <p>
+          <strong>Dinner:</strong>
+          Stir Fry Vegetables
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- WEEKEND -->
+
+    <div class="planner-card reveal">
+
+      <div class="planner-day">
+        Weekend
+      </div>
+
+      <div class="planner-meals">
+
+        <p>
+          <strong>Breakfast:</strong>
+          Omelette & Toast
+        </p>
+
+        <p>
+          <strong>Lunch:</strong>
+          Rice & Chicken
+        </p>
+
+        <p>
+          <strong>Dinner:</strong>
+          Family Dinner Special
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    </section>
+
+  <!-- HEALTH SECTION -->
+
+  <section class="health-section" id="health">
+
+    <div class="health-container">
+
+      <div class="health-text">
+
+        <h2>
+          Nutrition & Medical Guidance
+        </h2>
+
+        <p>
+          Healthy eating works best when combined with
+          informed nutrition decisions and consistent routines.
+          Meal planning can support energy balance, portion
+          control, and healthier food choices.
+        </p>
+
+        <p>
+          Individuals with medical conditions such as diabetes,
+          hypertension, allergies, or dietary restrictions should
+          consult qualified healthcare professionals before making
+          significant dietary changes.
+        </p>
+
+        <div class="medical-links">
+
+          <a href="https://www.who.int/health-topics/nutrition" target="_blank">
+            WHO Nutrition
+          </a>
+
+          <a href="https://nutritionsource.hsph.harvard.edu" target="_blank">
+            Harvard Nutrition Source
+          </a>
+
+          <a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating" target="_blank">
+            Mayo Clinic Nutrition
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="health-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1400&auto=format&fit=crop"
+          alt="Nutrition"
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NEWSLETTER -->
+
+  <section class="newsletter">
+
+    <h2>
+      Get Weekly Nutrition Tips
+    </h2>
+
+    <p>
+      Subscribe to receive healthy recipes,
+      meal ideas, and wellness insights.
+    </p>
+
+    <form>
+
+      <input
+        type="email"
+        placeholder="Enter your email"
+      >
+
+      <button type="submit">
+        Subscribe
+      </button>
+
+    </form>
+
+  </section>
+
+  <!--TESTIMONIAL-->
+
+    <section class="testimonials reveal">
+
+  <div class="section-header">
+
+    <h2>What Users Say</h2>
+
+    <p>
+      NutriFlow helps users stay consistent with healthier
+      meal planning and nutrition routines.
+    </p>
+
+  </div>
+
+  <div class="testimonial-grid">
+
+    <!-- TESTIMONIAL 1 -->
+
+    <div class="testimonial-card">
+
+      <div class="testimonial-profile">
+
+        <img
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="User"
+        >
+
+        <div>
+
+          <h4>Daniel James</h4>
+          <span>Fitness Student</span>
+
+        </div>
+
+      </div>
+
+      <p>
+        “NutriFlow helped me organize my weekly meals
+        while balancing my workout nutrition goals.”
+      </p>
+
+    </div>
+
+    <!-- TESTIMONIAL 2 -->
+
+    <div class="testimonial-card">
+
+      <div class="testimonial-profile">
+
+        <img
+          src="https://randomuser.me/api/portraits/women/44.jpg"
+          alt="User"
+        >
+
+        <div>
+
+          <h4>Sarah Williams</h4>
+          <span>Remote Worker</span>
+
+        </div>
+
+      </div>
+
+      <p>
+        “The meal videos and planner made cooking
+        healthier meals much easier for my schedule.”
+      </p>
+
+    </div>
+
+    <!-- TESTIMONIAL 3 -->
+
+    <div class="testimonial-card">
+
+      <div class="testimonial-profile">
+
+        <img
+          src="https://randomuser.me/api/portraits/women/68.jpg"
+          alt="User"
+        >
+
+        <div>
+
+          <h4>Anita Roberts</h4>
+          <span>Busy Parent</span>
+
+        </div>
+
+      </div>
+
+      <p>
+        “Simple, clean, and realistic. I love how easy
+        it is to plan meals for the entire week.”
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+
+  <footer id="contact">
+
+    <p>
+      © 2026 NutriFlow. Designed for healthier living.
+    </p>
+
+  </footer>
+
+  <!-- VIDEO MODAL -->
+
+  <div class="video-modal" id="videoModal">
+
+    <div class="video-content">
+
+      <span class="close-video" id="closeVideo">
+        &times;
+      </span>
+
+      <iframe
+        id="recipeVideo"
+        src=""
+        allowfullscreen
+      ></iframe>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
